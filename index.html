@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+    <h1>SLIDER JS PROJECT</h1>
+
+<div class="swiper-container">
+  
+    <div class="swiper-wrapper">
+    
+      <div class="swiper-slide" id="slide1"></div>
+      <div class="swiper-slide" id="slide2"></div>
+      <div class="swiper-slide" id="slide3"></div>
+      <div class="swiper-slide" id="slide4"></div>
+      <div class="swiper-slide" id="slide5"></div>
+      
+    </div>
+    
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+
+<script>
+
+const swiper = new Swiper('.swiper-container', {
+
+direction: 'horizontal',  
+loop:true,
+
+pagination: {
+  el: '.swiper-pagination',
+},
+
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+
+});
+</script>
+</body>
+</html>
